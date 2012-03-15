@@ -51,8 +51,7 @@ set laststatus=2                  " Show the status line all the time
 " Show buffer number, filetype, fileformat and fileencoding in statusline
 set statusline=[%n]\ [%f]\ %w%y%r%m[%{&fileformat}][%{&fileencoding}]\ %=\ %l/%L,%-5c\ %P\ 
 
-" Or use vividchalk
-colorscheme desert
+colorscheme Tomorrow-Night
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -69,6 +68,6 @@ if has("gui_running")
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
   set guioptions-=r  "remove right-hand scroll bar 
-  set guifont=Consolas:h12
+  set guifont=Consolas:h14
 endif
 
