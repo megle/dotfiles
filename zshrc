@@ -8,8 +8,11 @@ source $ZSH/oh-my-zsh.sh
 #init rbenv
 eval "$(rbenv init -)"
 
+PATH=~/.dotfiles/bin:$PATH
+
 # Customize to your needs...
 CDPATH='/Users/manuel/Development/'
 alias be='bundle exec'
+alias mvim='mvim --remote'
 
 
