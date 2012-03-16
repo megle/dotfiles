@@ -1,12 +1,17 @@
-# Oh my ZSH Configuration
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="megle"
-DISABLE_AUTO_UPDATE="true"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
-
 #init rbenv
 eval "$(rbenv init -)"
+
+# Colors
+autoload -U colors
+colors
+setopt prompt_subst
+
+# Show completion on first TAB
+setopt menucomplete
+
+# Load completions for Ruby, Git, etc.
+autoload compinit
+compinit
 
 PATH=~/.dotfiles/bin:$PATH
 
@@ -15,4 +20,6 @@ CDPATH='/Users/manuel/Development/'
 alias be='bundle exec'
 alias mvim='mvim --remote'
 
+PROMPT='$(git-cwd-info)%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
+RPROMPT='%{$fg[blue]%}%~%{$reset_color%}'
 
