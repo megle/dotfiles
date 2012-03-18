@@ -1,24 +1,20 @@
-#init rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init -)"            # init rbenv
 
-# Colors
-autoload -U colors
-colors
-setopt prompt_subst
+autoload -U colors && colors      # load colors
+setopt prompt_subst               # turn on command substitution in the prompt
+setopt menucomplete               # show completion on first TAB
+autoload compinit && compinit     # load completions for Ruby, Git, etc.
 
-# Show completion on first TAB
-setopt menucomplete
+CDPATH='~/Development/'           # put my dev dir into the cd search path
 
-# Load completions for Ruby, Git, etc.
-autoload compinit
-compinit
+export PATH=~/.dotfiles/bin:$PATH # put some helper scripts in the $PATH
 
-PATH=~/.dotfiles/bin:$PATH
-
-# Customize to your needs...
-CDPATH='/Users/manuel/Development/'
-alias be='bundle exec'
-
+# set up my prompt
 PROMPT='$(git-cwd-info)%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
 RPROMPT='%{$fg[blue]%}%~%{$reset_color%}'
+
+# aliases
+alias be='bundle exec'
+alias ls='ls -G'
+
 
