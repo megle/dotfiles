@@ -3,6 +3,7 @@
 set nocompatible                  " Must come first because it changes other options.
 
 call pathogen#infect()            " Use pathogen
+call pathogen#helptags()
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
@@ -51,7 +52,7 @@ set laststatus=2                  " Show the status line all the time
 " Show buffer number, filetype, fileformat and fileencoding in statusline
 set statusline=[%n]\ [%f]\ %w%y%r%m[%{&fileformat}][%{&fileencoding}]\ %=\ %l/%L,%-5c\ %P\ 
 
-colorscheme Tomorrow-Night
+colorscheme desert
 
 " Disable the arrow keys to force me to use HJKL.
 " (I'm still a VIM newbie)
