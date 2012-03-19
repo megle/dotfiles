@@ -11,7 +11,8 @@ export CDPATH='~/Development/'    # put my dev dir into the cd search path
 export PATH=~/.dotfiles/bin:$PATH # put some helper scripts in the PATH
 
 # set up my prompt
-PROMPT='$(git-cwd-info)%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
+. ~/.dotfiles/zsh/git_prompt.zsh
+PROMPT='$(git_prompt_info)%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
 RPROMPT='%{$fg[blue]%}%~%{$reset_color%}'
 
 # aliases
