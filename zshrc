@@ -12,8 +12,8 @@ export PATH=~/.dotfiles/bin:$PATH # put some helper scripts in the PATH
 
 # set up my prompt
 . ~/.dotfiles/zsh/git_prompt.zsh
-PROMPT='$(git_prompt_info)%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
-RPROMPT='%{$fg[blue]%}%~%{$reset_color%}'
+PROMPT='%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
+RPROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)'
 
 # aliases
 alias be='bundle exec'
