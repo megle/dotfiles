@@ -52,7 +52,7 @@ set laststatus=2                  " Show the status line all the time
 " Show buffer number, filetype, fileformat and fileencoding in statusline
 set statusline=[%n]\ [%f]\ %w%y%r%m[%{&fileformat}][%{&fileencoding}]\ %=\ %l/%L,%-5c\ %P\ 
 
-colorscheme desert
+colorscheme louver
 
 " Disable the arrow keys to force me to use HJKL.
 " (I'm still a VIM newbie)
