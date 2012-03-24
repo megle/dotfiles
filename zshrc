@@ -5,7 +5,7 @@ setopt prompt_subst               # turn on command substitution in the prompt
 setopt menucomplete               # show completion on first TAB
 autoload compinit && compinit     # load completions for Ruby, Git, etc.
 
-export CDPATH='~/Development/'    # put my dev dir into the cd search path
+export CDPATH=$HOME/Development   # put my dev dir into the cd search path
 export PATH=~/.dotfiles/bin:$PATH # put some helper scripts in the PATH
 typeset -U path cdpath fpath      # Remove duplicates
 
