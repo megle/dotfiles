@@ -54,6 +54,13 @@ set statusline=[%n]\ [%f]\ %w%y%r%m[%{&fileformat}][%{&fileencoding}]\ %=\ %l/%L
 
 colorscheme Tomorrow-Night-MEgle  " Try louver for a light theme.
 
+if has("gui_running")
+  set guioptions-=m  "remove menu bar
+  set guioptions-=T  "remove toolbar
+  set guioptions-=r  "remove right-hand scroll bar 
+  set guifont=Consolas:h14
+endif
+
 " Disable the arrow keys to force me to use HJKL.
 " (I'm still a VIM newbie)
 map <up> <nop>
@@ -65,10 +72,5 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-if has("gui_running")
-  set guioptions-=m  "remove menu bar
-  set guioptions-=T  "remove toolbar
-  set guioptions-=r  "remove right-hand scroll bar 
-  set guifont=Consolas:h14
-endif
-
+" Plugins
+let g:CommandTMaxHeight=10        " Limit CommandT to display only 10 files at once
