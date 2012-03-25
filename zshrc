@@ -17,3 +17,4 @@ RPROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)'
 # aliases
 alias be='bundle exec'
 alias ls='ls -G'
+alias mvim='open -a MacVim'
