@@ -1,5 +1,6 @@
-# Manuel's dotfilels
+# Manuel's dotfiles
 This repository contains my dotfiles for:
+
 - zsh
 - vim
 - git
@@ -7,6 +8,6 @@ This repository contains my dotfiles for:
 - and some defaults for Mac OS X
 
 ## Installation
-  git clone git://github.com/megle/dotfiles ~/.dotfiles
-  cd ~/.dotfiles
-  rake install
+    git clone git://github.com/megle/dotfiles ~/.dotfiles
+    cd ~/.dotfiles
+    rake install
