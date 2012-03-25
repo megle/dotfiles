@@ -27,7 +27,7 @@ set ruler                         " Show cursor position.
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
 
-set wrap                          " Turn on line wrapping.
+set nowrap                        " Turn off line wrapping.
 set scrolloff=5                   " Show 5 lines of context around the cursor.
 
 set title                         " Set the terminal's title
@@ -52,7 +52,7 @@ set laststatus=2                  " Show the status line all the time
 " Show buffer number, filetype, fileformat and fileencoding in statusline
 set statusline=[%n]\ [%f]\ %w%y%r%m[%{&fileformat}][%{&fileencoding}]\ %=\ %l/%L,%-5c\ %P\ 
 
-colorscheme louver
+colorscheme Tomorrow-Night-MEgle  " Try louver for a light theme.
 
 " Disable the arrow keys to force me to use HJKL.
 " (I'm still a VIM newbie)
