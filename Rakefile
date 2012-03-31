@@ -5,7 +5,8 @@ dotfiles = File.dirname(__FILE__)
 SYMLINKS = {
   'vimrc' => '~/.vimrc',
   'vim' => '~/.vim', 
-  'zshrc' => '~/.zshrc'
+  'zshrc' => '~/.zshrc',
+  'osx/com.apple.Terminal.plist' => '~/Library/Preferences/'
 }
 
 task :install do
