@@ -52,13 +52,12 @@ set laststatus=2                  " Show the status line all the time
 " Show buffer number, filetype, fileformat and fileencoding in statusline
 set statusline=[%n]\ [%f]\ %w%y%r%m[%{&fileformat}][%{&fileencoding}]\ %=\ %l/%L,%-5c\ %P\ 
 
-colorscheme Tomorrow-Night-MEgle  " Try louver for a light theme.
-
 if has("gui_running")
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
   set guioptions-=r  "remove right-hand scroll bar 
   set guifont=Consolas:h14
+  colorscheme solarized 
 endif
 
 " Disable the arrow keys to force me to use HJKL.
