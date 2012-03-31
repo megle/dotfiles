@@ -11,7 +11,8 @@ typeset -U path cdpath fpath      # Remove duplicates
 
 # set up my prompt
 . ~/.dotfiles/zsh/git_prompt.zsh
-PROMPT='%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
+# PROMPT='%{$fg[red]%} %(?,★,☆)  %{$reset_color%}'
+PROMPT='%{$fg[red]%} %(?,>>,??) %{$reset_color%}'
 RPROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)'
 
 # aliases
