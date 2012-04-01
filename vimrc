@@ -58,6 +58,7 @@ if has("gui_running")
   set guioptions-=r  "remove right-hand scroll bar 
   set guifont=Consolas:h14
   colorscheme solarized 
+  set background=dark
 endif
 
 " Disable the arrow keys to force me to use HJKL.
