@@ -1,4 +1,9 @@
+# Initialize Ruby environment
 eval "$(rbenv init -)"            # initialize rbenv 
+
+# Initialize Python environment
+export VIRTUAL_ENV_DISABLE_PROMPT=true
+source ~/.pyenv/default/bin/activate
 
 autoload -U colors && colors      # load colors
 setopt prompt_subst               # turn on command substitution in the prompt
